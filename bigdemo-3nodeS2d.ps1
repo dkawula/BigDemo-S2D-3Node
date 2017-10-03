@@ -78,14 +78,16 @@ param
   [string]
   $Timezone = 'Pacific Standard Time',
 
+  [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingPlainTextForPassword", "")]
   [Parameter(Mandatory)]
   [string]
-  $adminPassword = 'P@ssw0rd',
+  $adminPassword = 'P@ssw0rd', # This is not a preferred way to do passwords.
 
   [Parameter(Mandatory)]
   [string]
   $domainName = 'MVPDays.Com',
 
+  [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingPlainTextForPassword", "")]
   [Parameter(Mandatory)]
   [string]
   $domainAdminPassword = 'P@ssw0rd', # This is not a preferred way to do passwords.
